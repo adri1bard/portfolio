@@ -1,0 +1,226 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Hidden paragraphs */
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#presentation {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+
+    & article {
+        font-size: 30px;
+        width: 50%;
+        margin: auto;
+
+    }
+
+    & figure {
+        margin: 0;
+        padding: 0;
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+
+        & img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+/*header*/
+header {
+    margin: 0;
+
+    & section {
+        display: flex;
+
+        & article {
+            padding: 10%;
+            width: 40%;
+
+            & h1 {
+                font-size: 70px;
+            }
+        }
+
+        & figure {
+            width: 50%;
+            margin: 0;
+
+            & img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*sommaire*/
+
+
+/* Styles pour la navigation principale */
+nav {
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 8px black;
+    z-index: 999;
+
+
+    /* Styles pour la liste non ordonnée (ul) dans la navigation */
+
+    & ul {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+        padding-bottom: 1%;
+        padding-top: 1%;
+
+        /* Styles pour chaque élément de la liste (li) dans la navigation */
+
+        & li {
+            text-align: center;
+
+
+            & a {
+                text-decoration: none;
+                color: black;
+                text-align: center;
+                font-size: 20px;
+                display: inline-block;
+                transition: transform 0.2s;
+            }
+
+            & a:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+
+#projects {
+    margin-top: 200px;
+
+    & h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    & section {
+
+        display: flex;
+        justify-content: space-around;
+
+        & article {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 25%;
+
+
+            & h1 {
+                text-align: center;
+                font-size: 25px;
+            }
+
+            & img {
+                border-radius: 5px;
+                width: 100%;
+                box-shadow: 0px 5px 15px black;
+            }
+        }
+    }
+}
+
+.active-title {
+
+    color: rgba(0, 0, 0, 0.65) !important; /* You can customize the appearance as desired */
+    font-weight: bold !important;
+    background-color: white !important;
+
+
+}
+#technical-skills {
+    margin-top: 200px;
+
+    & h1 {
+        font-size: 50px;
+        text-align: center;
+        margin: 55px;
+        margin-bottom: 0;
+    }
+
+    & section {
+        & article {
+            display: flex;
+            justify-content: space-around;
+
+            & p {
+                width: 30%;
+                position: absolute;
+                top: 2000px;
+                font-size: 24px;
+                & b{
+                    font-size: 28px;
+                    color: goldenrod;
+                }
+            }
+
+            .left {
+
+                left: 4%;
+            }
+
+            .right {
+
+                left: 68%;
+
+            }
+
+            & h1 {
+                transition: background-color 0.5s ease,color 0.5s ease,box-shadow 0.2s ease;
+                font-size: 20px;
+                margin: 25px;
+                padding: 10px;
+                border: 2px solid black;
+                border-radius: 5px;
+                width: fit-content;
+                color: white;
+                box-shadow:2px 5px 10px #1c1c1c;
+                background-color: #1c1c1c;
+            }
+
+            & h1:hover {
+                box-shadow: 1px 4px 5px #1c1c1c;
+                cursor: pointer;
+                background-color: rgba(28, 28, 28, 0.84);
+            }
+        }
+    }
+}
+
+
+
+
+
