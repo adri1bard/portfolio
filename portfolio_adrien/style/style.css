@@ -179,7 +179,7 @@ nav {
             & p {
                 width: 30%;
                 position: absolute;
-                top: 2000px;
+
                 font-size: 24px;
                 & b{
                     font-size: 28px;
@@ -194,7 +194,7 @@ nav {
 
             .right {
 
-                left: 68%;
+                right: 4%;
 
             }
 
