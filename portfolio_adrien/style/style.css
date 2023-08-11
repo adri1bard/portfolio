@@ -83,7 +83,7 @@ nav {
     top: 0;
     box-shadow: 0px 2px 8px black;
     z-index: 999;
-
+    background: rgba(255, 255, 255, 0.53);
 
     /* Styles pour la liste non ordonnée (ul) dans la navigation */
 
@@ -120,7 +120,7 @@ nav {
 
 
 #projects {
-    margin-top: 200px;
+    padding-top: 150px;
 
     & h1 {
         font-size: 50px;
@@ -162,8 +162,8 @@ nav {
 
 }
 #technical-skills {
-    margin-top: 200px;
-
+    padding-top: 150px;
+    margin-bottom: 500px;
     & h1 {
         font-size: 50px;
         text-align: center;
