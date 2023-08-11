@@ -161,9 +161,10 @@ nav {
 
 
 }
+
 #technical-skills {
     padding-top: 150px;
-    margin-bottom: 500px;
+
     & h1 {
         font-size: 50px;
         text-align: center;
@@ -181,7 +182,8 @@ nav {
                 position: absolute;
 
                 font-size: 24px;
-                & b{
+
+                & b {
                     font-size: 28px;
                     color: goldenrod;
                 }
@@ -199,7 +201,7 @@ nav {
             }
 
             & h1 {
-                transition: background-color 0.5s ease,color 0.5s ease,box-shadow 0.2s ease;
+                transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.2s ease;
                 font-size: 20px;
                 margin: 25px;
                 padding: 10px;
@@ -207,7 +209,7 @@ nav {
                 border-radius: 5px;
                 width: fit-content;
                 color: white;
-                box-shadow:2px 5px 10px #1c1c1c;
+                box-shadow: 2px 5px 10px #1c1c1c;
                 background-color: #1c1c1c;
             }
 
@@ -215,6 +217,40 @@ nav {
                 box-shadow: 1px 4px 5px #1c1c1c;
                 cursor: pointer;
                 background-color: rgba(28, 28, 28, 0.84);
+            }
+        }
+    }
+}
+
+
+#professional {
+    padding-top: 150px;
+    & h1 {
+        font-size: 50px;
+        text-align: center;
+        margin: 55px;
+        margin-bottom: 0;
+    }
+    & section {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 150px;
+
+        & article {
+            font-size: 30px;
+            width: 50%;
+            margin: auto;
+        }
+
+        & figure {
+            width: 40%;
+            display: flex;
+
+            & img {
+                width: 100%;
+                border-radius: 5px;
+                box-shadow: 0px 5px 15px black;
+
             }
         }
     }
