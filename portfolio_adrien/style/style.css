@@ -1,10 +1,8 @@
 html {
     scroll-behavior: smooth;
 }
-
-body {
+body{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 /* Hidden paragraphs */
@@ -18,9 +16,39 @@ body {
     opacity: 1;
     visibility: visible;
 }
+article{
+    font-family: 'Jost', sans-serif;
+
+}
+h1, nav {
+    font-family: 'Roboto', sans-serif;
+}
+
+.col{
+    flex-direction: column;
+}
+
+
+
+/*  ici  */
+
+#presentation, #projects, #technical-skills, #professional, #contact {
+    background-color: #f5f5f5; /* Choose your desired background color */
+    padding: 50px 0; /* Add vertical padding to create spacing */
+}
+
+#projects h1, #technical-skills h1, #professional h1, #contact h1 {
+    font-size: 36px;
+    text-align: center;
+    padding: 20px;
+    background-color: #463f3d;
+    color: white;
+    border-radius: 5px;
+    margin: 0;
+}
 
 #presentation {
-    margin-top: 50px;
+    padding-top: 150px;
     display: flex;
     justify-content: space-around;
 
@@ -49,7 +77,6 @@ body {
 /*header*/
 header {
     margin: 0;
-
     & section {
         display: flex;
 
@@ -78,6 +105,7 @@ header {
 
 /* Styles pour la navigation principale */
 nav {
+
     position: sticky;
     top: 0;
     box-shadow: 0px 2px 8px black;
@@ -119,11 +147,12 @@ nav {
 
 
 #projects {
-    padding-top: 150px;
+    padding-top: 200px;
 
     & h1 {
         font-size: 50px;
         text-align: center;
+        margin-bottom: 50px;
     }
 
     & section {
@@ -138,7 +167,7 @@ nav {
             width: 25%;
 
 
-            & h1 {
+            & h2 {
                 text-align: center;
                 font-size: 25px;
             }
@@ -147,10 +176,11 @@ nav {
                 transition: box-shadow 0.2s ease;
                 border-radius: 5px;
                 width: 100%;
-                box-shadow: 0px 5px 15px black;
+                box-shadow: 0px 4px 8px black;
+
             }
             & img:hover {
-                box-shadow: 0px 4px 8px black;
+                box-shadow: 0px 5px 15px black;
             }
         }
     }
@@ -171,7 +201,7 @@ nav {
     & h1 {
         font-size: 50px;
         text-align: center;
-        margin: 55px;
+        margin-top: 55px;
         margin-bottom: 0;
     }
 
@@ -212,13 +242,15 @@ nav {
                 border-radius: 5px;
                 width: fit-content;
                 color: white;
-                box-shadow: 2px 5px 10px #1c1c1c;
+                box-shadow: 1px 4px 5px #1c1c1c;
+
                 background-color: #1c1c1c;
             }
 
             & h1:hover {
-                box-shadow: 1px 4px 5px #1c1c1c;
                 cursor: pointer;
+                box-shadow: 2px 5px 10px #1c1c1c;
+
                 background-color: rgba(28, 28, 28, 0.84);
             }
         }
@@ -232,7 +264,8 @@ nav {
     & h1 {
         font-size: 50px;
         text-align: center;
-        margin: 55px;
+        margin-top: 55px;
+
         margin-bottom: 0;
     }
 
@@ -265,8 +298,8 @@ nav {
 
 
 #contact {
-    margin-top: 50px;
-    padding-top: 50px;
+
+    padding-top: 100px;
 
     background: rgba(0,0,0,0.10);
     & h1{
@@ -316,9 +349,6 @@ nav {
         }
     }
 
-}
-.col{
-    flex-direction: column;
 }
 
 
