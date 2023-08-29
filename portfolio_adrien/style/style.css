@@ -353,9 +353,29 @@ nav {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     /* Styles for screens 600px or smaller */
 
+    #presentation{
+        flex-direction: column;
+        & figure{
+            margin: auto;
+            width: 70%;
+        }
+        & article{
+            width: 70%;
+        }
+    }
+    #projects{
+        & section{
+            flex-direction: column;
+            & article{
+                padding-top: 50px;
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
 
 }
 
