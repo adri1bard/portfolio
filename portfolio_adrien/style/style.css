@@ -376,6 +376,51 @@ nav {
             }
         }
     }
+    .left{
+
+        left: unset;
+    }
+    #technical-skills{
+        padding-bottom: 250px;
+        & section{
+
+            & article{
+                & h1{
+                    width: 25%;
+                }
+                & p{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    #professional{
+        & section{
+            padding-top: 0% ;
+            flex-direction: column-reverse;
+            & figure{
+                width: 70%;
+                margin: auto;
+            }
+            & article{
+
+                width: 70%;
+                & p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    nav{
+        & ul{
+          & li{
+              & a{
+                  font-size: 30px;
+              }
+          }
+        }
+
+    }
 
 }
 
