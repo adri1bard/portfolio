@@ -1,3 +1,7 @@
+
+
+const animatedElements = document.querySelectorAll('.scroll-animation');
+
 function toggleParagraph(titleElement) {
     // Get the parent article element
     const articleElement = titleElement.parentNode;
@@ -27,5 +31,15 @@ const articleTitles = document.querySelectorAll('#technical-skills article h1');
 articleTitles.forEach((title) => {
     title.addEventListener('click', () => {
         toggleParagraph(title);
+    });
+});
+
+window.addEventListener('scroll', () => {
+    animatedElements.forEach(element => {
+        if (element.getBoundingClientRect().top < window.innerHeight) {
+            element.classList.add('active');
+        } else {
+            element.classList.remove('active');
+        }
     });
 });
